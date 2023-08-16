@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">بطابط</string>
+    <string name="registration">التسجيل</string>
+    <string name="email">البريد</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="create_new_account">إنشاء حساب</string>
+    <string name="password">كلمة المرور</string>
+    <string name="full_name">الاسم الكامل</string>
+    <string name="already_have_account_login">لدي حساب بالفعل</string>
+    <string name="confirm_password">تأكيد كلمة المرور</string>
+    <string name="submit">دخول</string>
+    <string name="sign_in_with_google">تسجيل عبر حساب قوقل</string>
+</resources>

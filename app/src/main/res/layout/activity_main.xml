@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/onabi"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/slider_pager"
+        android:background="@color/onabi"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_180sdp"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        app:tint="@color/white"
+        android:background="@drawable/oval_btn"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="@dimen/_9sdp"
+        android:layout_marginTop="@dimen/_9sdp"
+        app:srcCompat="@drawable/baseline_menu_"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"/>
+
+    <com.google.android.material.tabs.TabLayout
+        app:tabGravity="center"
+        android:background="@null"
+        android:id="@+id/tab_indicator"
+        app:tabBackground="@drawable/indidcator_selector"
+        app:tabIndicatorHeight="0dp"
+        android:layout_alignBottom="@id/slider_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_above="@id/bottom_nav"
+            android:layout_marginTop="@dimen/_9sdp"
+            android:layout_below="@id/slider_pager"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginStart="@dimen/_9sdp"
+                android:layout_marginEnd="@dimen/_9sdp"
+                android:textSize="@dimen/_13ssp"
+                android:textColor="@color/white"
+                android:layout_gravity="end"
+                android:fontFamily="@font/noto_kufi_arabic"
+                android:text="@string/text_for_test"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:elevation="@dimen/_2sdp"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_gravity="end"
+                android:layout_margin="@dimen/_9sdp"
+                app:riv_corner_radius="@dimen/_12sdp"
+                android:src="@drawable/fb"
+                android:scaleType="centerCrop"
+                android:layout_height="@dimen/_300sdp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        app:elevation="@dimen/_2sdp"
+        app:itemTextColor="@color/indicator_default"
+        android:background="@color/onabi"
+        app:itemIconTint="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/buttom_menu"/>
+
+
+
+</RelativeLayout>

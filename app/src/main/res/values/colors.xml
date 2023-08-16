@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="colorPrimary">#70193D</color>
+    <color name="colorPrimaryDark">#19181A</color>
+    <color name="onabi">#8A1538</color>
+    <color name="white">#ffffff</color>
+
+    <color name="indicator_default">#937C7C</color>
+    <color name="indicator_selected">#F6FAF9</color>
+</resources>
